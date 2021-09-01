@@ -1,0 +1,27 @@
+
+
+#qgis에 속성테이블 연산식이 json문법인듯 아닌듯 그러함
+#따라서 그때 그때 속성테이블에서 함수 seaching and sampling 하는것이 중요함
+
+#여러 중복조건에 의한 함수
+#case  when then (else) end 
+
+
+#sampling01 
+
+case 
+when "dataset01" LIKE '%qgis%' 
+then 'QGIS'
+else 'other'
+end
+
+#sampling02
+
+case 
+when "dataset02" > 5
+then 'lower'
+when "dataset02" = 0
+then 'normal'
+when "dataset02" < 5
+then 'large'
+end
