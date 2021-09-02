@@ -9,9 +9,9 @@
 #01_국공립유치원_500
 case
 when "Accessi_01" < 500 
-then '불충족'
-when "Accessi_01" >= 500 
 then '충족'
+when "Accessi_01" >= 500 
+then '불충족'
 else '데이터없음'
 end
 
